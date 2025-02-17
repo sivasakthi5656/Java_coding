@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+    public static boolean ArraySort(int ar[],int ar1[]){
+        Arrays.sort(ar1);
+        if(ar.equals(ar1))return true;
+        else return false;
+    }
+	public static void main(String[] args) {
+	    Scanner Sc=new Scanner(System.in);
+	    int a=Sc.nextInt();
+	    int ar[] = new int[a];
+	    int ar1[]=new int[a];
+	    for(int i=0;i<a;i++){
+	    ar[i]=Sc.nextInt();
+	    ar1[i]=ar[i];
+	    }
+	    if(ArraySort(ar,ar1))
+	    System.out.print("Sorted");
+	    else
+	    System.out.println("Unsorted");
+	    
+	}
+}
